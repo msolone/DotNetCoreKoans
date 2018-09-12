@@ -121,7 +121,7 @@ namespace DotNetCoreKoans.Koans
 
             int x = (5 >> 2) & (~8) ^ 8;
 
-            Assert.Equal(16, x);
+            Assert.Equal(9, x);
         }
 
         [Step(12)]
@@ -130,7 +130,7 @@ namespace DotNetCoreKoans.Koans
 
             int x = (8 << 2) & (~5) & 8 | 10 | (5 >> 1);
 
-            Assert.Equal(FILL_ME_IN, x);
+            Assert.Equal(10, x);
         }
 
 
