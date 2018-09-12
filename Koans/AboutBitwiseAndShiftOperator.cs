@@ -140,11 +140,18 @@ namespace DotNetCoreKoans.Koans
             //Solve this problem without using + or -
             //This is complicated problem, if you don't 
             //know how to solve it try to Google it.
-            int a = 15;
-            int b = 4;
+            int x = 25;
+            int y = 10;
+            while (y != 0) 
+            {
+                var sum = x ^ y;
+                var carry = (x & y) << 1;
+                x = sum;
+                y = carry;
+            }
 
             //Here goes your implementation to set value to FILL_ME_IN
-            Assert.Equal(FILL_ME_IN, 19);
+            Assert.Equal(x, 35);
         }
     }
 }
